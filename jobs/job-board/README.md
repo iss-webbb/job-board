@@ -68,7 +68,7 @@ This project demonstrates:
 Clone the repository:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/iss-webbb/job-board.git
 ```
 
 Move into the project folder:
