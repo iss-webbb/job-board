@@ -8,6 +8,7 @@ const Searchbar = ({searchTerm, setSearchTerm, setQuery, setPage, setSort, setCo
       <input
         type="text"
         value={searchTerm}
+        placeholder="search jobs"
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <button
