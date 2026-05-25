@@ -1,7 +1,7 @@
 import { useCustomhooks } from "../hooks/Customhooks";
 import Searchbar from "../components/Searchbar";
-import Jobboard from "../components/Jobboard"
-import Modal from "../components/modal"
+import Jobboard from "../components/Jobboard";
+import Modal from "../components/modal";
 
 const App = () => {
   const {
@@ -13,12 +13,12 @@ const App = () => {
     saveJobs,
     setSaveJobs,
     setSort,
-    sorted, 
-    removeJobs, 
-    notWorking, 
-    modal, 
+    sorted,
+    removeJobs,
+    notWorking,
+    modal,
     setModal,
-    setCountry
+    setCountry,
   } = useCustomhooks();
 
   return (
@@ -31,7 +31,7 @@ const App = () => {
           setPage={setPage}
           setModal={setModal}
           setSort={setSort}
-          setCountry = {setCountry}
+          setCountry={setCountry}
         />
       }
 
@@ -41,13 +41,18 @@ const App = () => {
           setSaveJobs={setSaveJobs}
           setPage={setPage}
           sorted={sorted}
-          notWorking = {notWorking}
+          notWorking={notWorking}
           saveJobs={saveJobs}
         />
       }
 
       {
-        <Modal saveJobs={saveJobs} modal={modal} setModal={setModal} filter={removeJobs} />
+        <Modal
+          saveJobs={saveJobs}
+          modal={modal}
+          setModal={setModal}
+          filter={removeJobs}
+        />
       }
     </div>
   );
